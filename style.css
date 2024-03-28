@@ -1,0 +1,37 @@
+.text-footercolor:hover{
+    color: #131821;
+}
+
+.shadow-custom {
+    box-shadow: rgba(0, 97, 211) 0px 5px 15px 5px;
+}
+
+.custom-background-color {
+    background-color: rgb(21, 21, 21);
+}
+
+.footer-color {
+    background-color: rgb(19, 24, 33 ,1)
+}
+
+.vertical-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1f2937; /* Change this color as needed */
+    z-index: 9999;
+}
+
+.vertical-menu a {
+    display: block;
+    padding: 10px;
+    color: #ffffff; /* Change text color as needed */
+    text-decoration: none;
+}
+
+/* Style for hover effect */
+.vertical-menu a:hover {
+    background-color: #3e4c59; /* Change hover color as needed */
+}
