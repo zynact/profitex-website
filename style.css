@@ -20,18 +20,49 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #1f2937; /* Change this color as needed */
+    background-color: #1f2937; 
     z-index: 9999;
+    
 }
 
 .vertical-menu a {
     display: block;
     padding: 10px;
-    color: #ffffff; /* Change text color as needed */
+    color: #ffffff; 
     text-decoration: none;
 }
 
-/* Style for hover effect */
+
 .vertical-menu a:hover {
-    background-color: #3e4c59; /* Change hover color as needed */
+    background-color: #3e4c59; 
 }
+
+.pricing-border{
+    height: 35rem;
+    width: 24rem;
+}
+
+.footer-color::placeholder {
+    color: white;
+   padding-left: 10px;
+   font-size: 12px;
+  }
+
+  .over-vision{
+    height: 13rem;
+    width: 50rem;
+  }
+
+  @media (min-width: 768px) {
+    .over-vision {
+        height: 15rem;
+        width: 64rem;
+      }
+    }
+  
+@media (max-width: 640px) {
+  .over-vision {
+      height: 15rem;
+      width: 50rem;
+    }
+  }
