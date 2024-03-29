@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Profitex</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
@@ -18,15 +19,15 @@
         style="background-image: url('assets/background.webp')"
       >
       <section>
-        <nav class="relative text-white flex justify-between items-center px-4 sm:px-8 lg:px-24 py-4">
+        <nav class="relative text-white flex justify-between items-center px-4 pt-10 sm:px-8 lg:px-24 py-4">
           <div>
               <img src="assets/x.webp" alt="Logo" class="h-8" />
           </div>
           <div class="hidden md:block">
-              <a href="#" class="hover:text-blue-300 font-semibold ml-6">Home</a>
-              <a href="/pricing.html" class="hover:text-blue-300 font-semibold ml-6">Pricing</a>
-              <a href="/contact.html" class="hover:text-blue-300 font-semibold ml-6">Contact</a>
-              <a href="#" class="hover:text-blue-300 font-semibold ml-6">Login</a>
+              <a href="#" class="hover:text-blue-300 font-semibold ml-6 2xl:text-2xl">Home</a>
+              <a href="/pricing.html" class="hover:text-blue-300 font-semibold ml-6 2xl:text-2xl">Pricing</a>
+              <a href="/contact.html" class="hover:text-blue-300 font-semibold ml-6 2xl:text-2xl">Contact</a>
+              <a href="#" class="hover:text-blue-300 font-semibold ml-6 2xl:text-2xl">Login</a>
           </div>
           <div class="sm:hidden">
               <button class="mobile-menu-button">
@@ -36,8 +37,12 @@
               </button>
           </div>
       </nav>
+
+
+      <!-- mobile menu -->
       
-      <div class="menu-items md:hidden hidden"> <!-- Initially hide the menu items container on mobile -->
+      
+      <div class="menu-items md:hidden hidden z-20"> 
           <div class="p-32 bg-black">
               <a href="#" class="hover:text-blue-300 text-white font-semibold ml-6 block">Home</a>
               <a href="/pricing.html" class="hover:text-blue-300 text-white font-semibold ml-6 block">Pricing</a>
@@ -48,22 +53,19 @@
       
       <script>
           document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-              document.querySelector('.menu-items').classList.toggle('hidden'); // Toggle the visibility of the menu items container
+              document.querySelector('.menu-items').classList.toggle('hidden'); 
           });
       </script>
     <div>
-
-    </div>
-
-    
   </div>
+   
   </section>
     
     
 
         <!-- section one -->
         <section
-          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
         >
           <div class="flex flex-col items-center text-center">
             <div class="flex">
@@ -92,6 +94,13 @@
             </button>
           </div>
         </section>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white animate-bounce" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10 12a.997.997 0 0 1-.707-.293l-3-3a.999.999 0 1 1 1.414-1.414L10 9.586l2.293-2.293a.999.999 0 1 1 1.414 1.414l-3 3A.997.997 0 0 1 10 12zm0 4a.997.997 0 0 1-.707-.293l-3-3a.999.999 0 1 1 1.414-1.414L10 13.586l2.293-2.293a.999.999 0 1 1 1.414 1.414l-3 3A.997.997 0 0 1 10 16z"/>
+          </svg>
+          
+        </div>
       </div>
 
       <div class="custom-background-color">
@@ -112,14 +121,14 @@
 
           <section>
             <div
-              class="md:flex px-2 py-10 md:py-16 md:py-28 lg:px-20 lg:gap-40 md:gap-20 "
+              class="md:flex px-2 py-10 md:py-16 md:py-28 lg:px-20 lg:gap-40 md:gap-20"
             >
               <div class="">
-                <img src="assets/overvision.webp" alt="overvision" class="" />
+                <img src="assets/network.webp" alt="overvision" class="over-vision" />
               </div>
               <div>
                 <h1
-                  class="text-white text-2xl 2xl:text-4xl font-bold mb-10 mt-20 md:mt-0"
+                  class="text-white text-2xl 2xl:text-4xl font-bold mb-10 mt-20 md:mt-5"
                 >
                   Our Vision
                 </h1>
@@ -141,41 +150,40 @@
           <!-- section fore -->
 
           <section>
-            <h1
-              class="text-white text-2xl 2xl:text-4xl font-bold mb-20  md:mt-0 lg:ml-20"
-            >
+            <h1 class="text-white text-2xl 2xl:text-4xl font-bold mb-20  md:mt-0 lg:ml-20 2xl:leading-loose relative leading-10">
               How it works
+              <div class="absolute bottom-0 left-0 w-20 h-1 bg-white 2xl:w-28 2xl:h-2"></div>
             </h1>
-            <div class="lg:px-28 md:px-10 2xl:px-96 2xl:my-32">
+            <div class="lg:px-20 md:px-10 2xl:px-0  2xl:my-32">
               <div>
-                <div class="md:flex lg:gap-72 mx-24 md:mx-0 gap-32">
+                <div class="md:flex 2xl:gap-72 lg:gap-56 mx-24 md:mx-0 gap-32">
                   <div class="mb-10">
                     <img
-                      src="assets/team.webp"
+                      src="assets/people.webp"
                       alt="overvision"
-                      class="h-22 w-28 2xl:w-52 2xl:h-48 2xl:mb-2"
+                      class="h-22 w-28 2xl:w-60 2xl:h-48 2xl:mb-2 lg:ml-5 2xl:ml-20"
                     />
-                    <p class="text-white md:text-xs 2xl:text-2xl">
+                    <p class="text-white  lg:text-center md:text-sm 2xl:text-2xl md:mt-5">
                       Helping others join by referring them
                     </p>
                   </div>
                   <div class="mb-10">
                     <img
-                      src="assets/metaverse.webp"
+                      src="assets/meta.webp"
                       alt="overvision"
-                      class="h-24 w-24 2xl:w-52 2xl:h-48"
+                      class="h-24 w-24 2xl:w-60 2xl:h-48 lg:ml-7 2xl:ml-24"
                     />
-                    <p class="text-white md:text-xs mt-5 2xl:text-2xl">
+                    <p class="text-white lg:text-center md:text-sm mt-5 2xl:text-2xl">
                       New user joins and upgrades the account
                     </p>
                   </div>
                   <div class="mb-10">
                     <img
-                      src="assets/doller.webp"
+                      src="assets/doler.webp"
                       alt="overvision"
-                      class="h-24 w-24 2xl:w-52 2xl:h-48"
+                      class="h-24 w-24 2xl:w-60 2xl:h-48 lg:ml-7 2xl:ml-28"
                     />
-                    <p class="text-white md:text-xs mt-5 2xl:text-2xl">
+                    <p class="text-white md:text-sm lg:text-center mt-5 2xl:text-2xl">
                       Reward getting distributed in the community
                     </p>
                   </div>
@@ -195,7 +203,7 @@
               </div>
               <div>
                 <h1
-                  class="text-white text-2xl 2xl:text-4xl mb-10 mt-20 md:mt-0"
+                  class="text-white text-2xl 2xl:text-4xl 2xl:mt-10 mb-10 mt-20 md:mt-0"
                 >
                   Join Our Community
                 </h1>
@@ -259,7 +267,7 @@
               </div>
               <div>
                 <h1
-                  class="text-white text-2xl 2xl:text-4xl mb-10 mt-20 md:mt-0"
+                  class="text-white text-2xl 2xl:text-4xl 2xl:mt-10 mb-10 mt-20 md:mt-0"
                 >
                   Future-Forward Approach
                 </h1>
@@ -313,10 +321,8 @@
 
           <!-- section six -->
 
-          <div
-            class="footer-color md:flex items-start md:text-lg text-sm justify-between gap-20 lg:mx-16 p-8 text-white rounded-2xl mt-20"
-          >
-            <div class="">
+          <div class="footer-color md:flex items-start md:text-lg text-sm justify-between gap-20 lg:mx-16 p-8 text-white rounded-2xl mt-20">
+            <div>
               <p>
                 Embark on a journey of discovery and empowerment with Profitex.
                 Join our community, earn rewards, and unlock a world of exciting
@@ -324,15 +330,11 @@
                 again.
               </p>
             </div>
+            
             <div>
-              <div>
-                <button
-                class="bg-blue-600 hover:bg-blue-700 text-xs text-white font-semibold py-3 px-7 mt-10 lg:mt-5 lg:py-2 lg:px-6 rounded shadow-custom mx-16 md:mx-0"
-              >
+              <button style="height: 2.5rem;" class="bg-blue-600 hover:bg-blue-700 text-xs text-white font-semibold py-3 px-7 mt-10 lg:mt-5 lg:py-2 lg:px-6 rounded shadow-custom mx-16 md:mx-0">
                 Get Started
               </button>
-              </div>
-             
             </div>
           </div>
         </div>
@@ -340,7 +342,7 @@
 
           <footer class="footer-color py-10 mt-10 pl-5 lg:px-20">
             <div
-              class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:gap-32 gap-4"
+              class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:gap-26 gap-4"
             >
               <div class="text-white">
                 <div class="flex">
@@ -348,36 +350,43 @@
                   <div><img src="assets/x.webp" alt="Logo" class="h-8 mt-2" /></div>
                   </div>
                 <div class="flex gap-4 mt-10">
-                  <div><i class="fab fa-instagram"></i> </div>
-                  <div><i class="fa-brands fa-facebook-f"></i></div>
-                  <div><i class="fa-brands fa-linkedin-in"></i></div>
-                 <div><i class="fa-brands fa-youtube"></i></div> 
-                <div><i class="fa-brands fa-twitter"></i></div>  
+                  <div> <img src="assets/instagram.webp" class="h-5 w-5" alt="overvision"/> </div>
+                  <div> <img src="assets/facebook.webp" class="h-5 w-5" alt="overvision"/> </div>
+                  <div> <img src="assets/linkedin.webp" class="h-5 w-5" alt="overvision"/> </div>
+                  <div> <img src="assets/youtube.webp" class="h-5 w-5" alt="overvision"/> </div>
+                  <div> <img src="assets/twitter.webp" class="h-5 w-5" alt="overvision"/> </div>
                 </div>
                
               </div>
-              <div class="text-white">
+              <div class="text-white lg:pl-20 md:pl-12">
                 <h3 class="text-md font-semibold mt-3 lg:mt-0 lg:mb-2">Contact Us</h3>
                 <div class="flex gap-2">
-                  <div><i class="fa-solid fa-phone mt-3"></i></div>
+                  <div> <img src="assets/Vector.webp" class="h-4 w-4 mt-3" alt="overvision"/> </div>
                   <div> <p class="text-xs my-3">+91 98745125220</p></div>
                 </div>
                
                 <div class="flex gap-2">
-                  <div><i class="fa-regular fa-envelope mt-3"></i></i></div>
+                  <div> <img src="assets/mail.webp" class="h-4 w-4 mt-3" alt="overvision"/> </div>
                   <div> <p class="text-xs my-3">support@profitex.io</p></div>
                 </div>
                 <div class="flex gap-2">
-                  <div><i class="fa-solid fa-location-dot mt-3"></i></i></i></div>
+                  <div> <img src="assets/map.webp" class="h-4 w-4 mt-3" alt="overvision"/> </div>
                   <div> <p class="text-xs my-3">Cochin, Kerala</p></div>
                 </div>
               </div>
-              <div class="text-white">
-                <p class="text-xs my-5">Terms & Conditions</p>
-                <p class="text-xs my-2">Privacy policy</p>
+              <div class="text-white md:pl-20">
+                <div class="text-xs my-5">
+                  <a href="/conditions.html">Terms & Conditions</a>
+                </div>
+                <div class="text-xs my-5">
+                  <a href="/privacy.html">Privacy policy</a>
+                </div>
+                
               </div>
-              <div class="text-white">
-                <p class="text-xs my-5">Refund policy</p>
+              <div class="text-white md:pl-20">
+                <div class="text-xs my-5">
+                  <a href="/refund.html">Refund policy</a>
+                </div>
                 <p class="text-xs my-2">FAQ</p>
               </div>
             </div>
@@ -390,7 +399,7 @@
         </div>
     </div>
 
-     <!-- Script for mobile menu toggle -->
+  
     
   </body>
 </html>
