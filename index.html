@@ -1,405 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>Profitex</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <div>
-      <div
-        class="relative bg-cover bg-center bg-no-repeat w-full h-screen"
-        style="background-image: url('assets/background.webp')"
-      >
-      <section>
-        <nav class="relative text-white flex justify-between items-center px-4 pt-10 sm:px-8 lg:px-24 py-4">
-          <div>
-              <img src="assets/x.webp" alt="Logo" class="h-8" />
-          </div>
-          <div class="hidden md:block">
-              <a href="#" class="hover:text-blue-300 font-semibold ml-6 2xl:text-2xl">Home</a>
-              <a href="/pricing.html" class="hover:text-blue-300 font-semibold ml-6 2xl:text-2xl">Pricing</a>
-              <a href="/contact.html" class="hover:text-blue-300 font-semibold ml-6 2xl:text-2xl">Contact</a>
-              <a href="#" class="hover:text-blue-300 font-semibold ml-6 2xl:text-2xl">Login</a>
-          </div>
-          <div class="sm:hidden">
-              <button class="mobile-menu-button">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-              </button>
-          </div>
-      </nav>
+        <div class="relative bg-cover bg-center bg-no-repeat w-full h-screen"
+            style="background-image: url('assets/background.webp')">
+            <section class="nav-section">
+                <nav class="relative text-white flex justify-between items-center px-4 pt-10 sm:px-8 lg:px-24 py-4">
+                    <div>
+                        <a href="./index.html"><img src="assets/x.webp" alt="Logo" class="h-8" /></a>
+                    </div>
+                    <div class="hidden md:block">
+                        <a href="#" class="hover:text-blue-300 font-semibold ml-10 2xl:text-2xl">Home</a>
+                        <a href="./pricing.html"
+                            class="hover:text-blue-300 font-semibold ml-10 2xl:text-2xl">Pricing</a>
+                        <a href="./contact.html"
+                            class="hover:text-blue-300 font-semibold ml-10 2xl:text-2xl">Contact</a>
+                        <a href="https://app.profitex.io"
+                            class="hover:text-blue-300 font-semibold ml-10 2xl:text-2xl">Login</a>
+                    </div>
+                    <div class="sm:hidden flex items-center">
+                        <button class="mobile-menu-button">
+                            <span class="toogle-open">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            </span>
+                            <span class="toogle-close hidden float-right">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24">
+                                    <line x1="1" y1="20" x2="20" y2="1" stroke="currentColor" stroke-width="2" />
+                                    <line x1="1" y1="1" x2="20" y2="20" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </nav>
 
 
-      <!-- mobile menu -->
-      
-      
-      <div class="menu-items md:hidden hidden z-20"> 
-          <div class="p-32 bg-black">
-              <a href="#" class="hover:text-blue-300 text-white font-semibold ml-6 block">Home</a>
-              <a href="/pricing.html" class="hover:text-blue-300 text-white font-semibold ml-6 block">Pricing</a>
-              <a href="/contact.html" class="hover:text-blue-300 text-white font-semibold ml-6 block">Contact</a>
-              <a href="#" class="hover:text-blue-300 font-semibold text-white ml-6 block">Login</a>
-          </div>
-      </div>
-      
-      <script>
-          document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-              document.querySelector('.menu-items').classList.toggle('hidden'); 
-          });
-      </script>
-    <div>
-  </div>
-   
-  </section>
-    
-    
+                <!-- mobile menu -->
+                <div class="w-full absolute left-0 menu-items md:hidden hidden p-5">
+                    <div class="w-full">
+                        <a href="#" class="hover:text-blue-300 text-white font-semibold py-5 block">Home</a>
+                        <a href="./pricing.html"
+                            class="hover:text-blue-300 text-white font-semibold py-5 block">Pricing</a>
+                        <a href="./contact.html"
+                            class="hover:text-blue-300 text-white font-semibold py-5 block">Contact</a>
+                        <a href="https://app.profitex.io"
+                            class="hover:text-blue-300 font-semibold text-white py-5 block">Login</a>
+                    </div>
+                </div>
 
-        <!-- section one -->
-        <section
-          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
-        >
-          <div class="flex flex-col items-center text-center">
-            <div class="flex">
-              <div>
-                <h1 class="text-7xl md:text-9xl font-semibold text-white ml-12">
-                  Profite
-                </h1>
-              </div>
-              <div>
-                <img
-                  src="assets/x.webp"
-                  alt="Logo"
-                  class="h-16 mt-3 md:h-24 md:mt-10 mr-20 lg:mr-0"
-                />
-              </div>
+                <script>
+                    document.querySelector('.mobile-menu-button').addEventListener('click', function () {
+                        document.querySelector('.menu-items').classList.toggle('hidden');
+                        document.querySelector('.toogle-open').classList.toggle('hidden');
+                        document.querySelector('.toogle-close').classList.toggle('hidden');
+                    });
+                    document.querySelector('.toogle-open').addEventListener('click', function () {
+                        document.querySelector('.nav-section').classList.add('bg-black');
+                        document.querySelector('.menu-items').classList.add('bg-black');
+                    });
+                    document.querySelector('.toogle-close').addEventListener('click', function () {
+                        document.querySelector('.nav-section').classList.remove('bg-black');
+                        document.querySelector('.menu-items').classList.remove('bg-black');
+                    });
+                </script>
+                <div>
+                </div>
+
+            </section>
+
+            <!-- section one -->
+            <section>
+                <div class="mt-20">
+                    <div class="text-center">
+                        <div class="flex justify-center">
+                            <img class="w-1/2" src="assets/logo.webp" alt="Logo" />
+                        </div>
+                        <p class="text-white">Earn real rewards</p>
+                        <button
+                            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-7 mt-10 lg:mt-10 lg:py-3 lg:px-10 rounded-xl shadow-custom">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white animate-bounce" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path
+                        d="M10 12a.997.997 0 0 1-.707-.293l-3-3a.999.999 0 1 1 1.414-1.414L10 9.586l2.293-2.293a.999.999 0 1 1 1.414 1.414l-3 3A.997.997 0 0 1 10 12zm0 4a.997.997 0 0 1-.707-.293l-3-3a.999.999 0 1 1 1.414-1.414L10 13.586l2.293-2.293a.999.999 0 1 1 1.414 1.414l-3 3A.997.997 0 0 1 10 16z" />
+                </svg>
             </div>
-            <div
-              class="text-center items-center text-sm md:text-xl text-white mt-10 md:mt-5"
-            >
-              <p>Lorem ipsum dolor sit amet</p>
-            </div>
-            <button
-              class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-7 mt-10 lg:mt-5 lg:py-2 lg:px-6 rounded shadow-custom"
-            >
-              Get Started
-            </button>
-          </div>
-        </section>
-
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white animate-bounce" viewBox="0 0 20 20" fill="currentColor">
-            <path d="M10 12a.997.997 0 0 1-.707-.293l-3-3a.999.999 0 1 1 1.414-1.414L10 9.586l2.293-2.293a.999.999 0 1 1 1.414 1.414l-3 3A.997.997 0 0 1 10 12zm0 4a.997.997 0 0 1-.707-.293l-3-3a.999.999 0 1 1 1.414-1.414L10 13.586l2.293-2.293a.999.999 0 1 1 1.414 1.414l-3 3A.997.997 0 0 1 10 16z"/>
-          </svg>
-          
         </div>
-      </div>
 
-      <div class="custom-background-color">
-        <div class="px-10 py-10 md:py-16 lg:px-32 lg:py-28">
-          <!-- section two -->
-          <section>
-            <p
-              class="text-white lg:px-40 lg:text-center text-justify text-sm md:text-xl 2xl:text-3xl"
-            >
-              Welcome to Profitex, a pioneering venture under Reliva Enterprises
-              Pvt Ltd. We are on a mission to revolutionize shopping experiences
-              by blending the physical and digital realms through our innovative
-              Community Commerce project.
-            </p>
-          </section>
-
-          <!-- section three -->
-
-          <section>
-            <div
-              class="md:flex px-2 py-10 md:py-16 md:py-28 lg:px-20 lg:gap-40 md:gap-20"
-            >
-              <div class="">
-                <img src="assets/network.webp" alt="overvision" class="over-vision" />
-              </div>
-              <div>
-                <h1
-                  class="text-white text-2xl 2xl:text-4xl font-bold mb-10 mt-20 md:mt-5"
-                >
-                  Our Vision
-                </h1>
-                <p
-                  class="text-white text-md 2xl:text-3xl text-justify"
-                  style="font-family: 'Proxima Nova', sans-serif"
-                >
-                  At Profitex, we envision creating a vibrant community where
-                  individuals come together to shop, connect, and thrive.
-                  Through our unique Community Commerce project, we strive to
-                  bridge the gap between physical and digital shopping,
-                  empowering our members to explore a world of endless
-                  possibilities.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <!-- section fore -->
-
-          <section>
-            <h1 class="text-white text-2xl 2xl:text-4xl font-bold mb-20  md:mt-0 lg:ml-20 2xl:leading-loose relative leading-10">
-              How it works
-              <div class="absolute bottom-0 left-0 w-20 h-1 bg-white 2xl:w-28 2xl:h-2"></div>
-            </h1>
-            <div class="lg:px-20 md:px-10 2xl:px-0  2xl:my-32">
-              <div>
-                <div class="md:flex 2xl:gap-72 lg:gap-56 mx-24 md:mx-0 gap-32">
-                  <div class="mb-10">
-                    <img
-                      src="assets/people.webp"
-                      alt="overvision"
-                      class="h-22 w-28 2xl:w-60 2xl:h-48 2xl:mb-2 lg:ml-5 2xl:ml-20"
-                    />
-                    <p class="text-white  lg:text-center md:text-sm 2xl:text-2xl md:mt-5">
-                      Helping others join by referring them
+        <div>
+            <div class="px-10 py-10 md:py-16 lg:px-32 lg:py-28">
+                <!-- section two -->
+                <section>
+                    <p class="text-white lg:px-40 lg:text-center text-justify text-sm md:text-xl 2xl:text-3xl">
+                        Welcome to Profitex, a pioneering venture under Reliva Enterprises
+                        Pvt Ltd. We are on a mission to revolutionize shopping experiences
+                        by blending the physical and digital realms through our innovative
+                        Community Commerce project.
                     </p>
-                  </div>
-                  <div class="mb-10">
-                    <img
-                      src="assets/meta.webp"
-                      alt="overvision"
-                      class="h-24 w-24 2xl:w-60 2xl:h-48 lg:ml-7 2xl:ml-24"
-                    />
-                    <p class="text-white lg:text-center md:text-sm mt-5 2xl:text-2xl">
-                      New user joins and upgrades the account
-                    </p>
-                  </div>
-                  <div class="mb-10">
-                    <img
-                      src="assets/doler.webp"
-                      alt="overvision"
-                      class="h-24 w-24 2xl:w-60 2xl:h-48 lg:ml-7 2xl:ml-28"
-                    />
-                    <p class="text-white md:text-sm lg:text-center mt-5 2xl:text-2xl">
-                      Reward getting distributed in the community
-                    </p>
-                  </div>
+                </section>
+
+                <!-- section three -->
+
+                <section class="mt-10 md:mt-20">
+                    <div class="md:flex px-2 py-10 md:py-16 md:py-28 lg:px-20 lg:gap-40 md:gap-20">
+                        <div>
+                            <img src="assets/vision.webp" alt="vision image" />
+                        </div>
+                        <div>
+                            <h1 class="text-white text-2xl 2xl:text-4xl font-bold mb-10 mt-20 md:mt-5">
+                                Our Vision
+                            </h1>
+                            <p class="text-white text-md 2xl:text-3xl text-justify"
+                                style="font-family: 'Proxima Nova', sans-serif">
+                                At Profitex, we envision creating a vibrant community where
+                                individuals come together to shop, connect, and thrive.
+                                Through our unique Community Commerce project, we strive to
+                                bridge the gap between physical and digital shopping,
+                                empowering our members to explore a world of endless
+                                possibilities.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- section fore -->
+
+                <section class="mt-10 md:mt-20">
+                    <div class="px-2 py-10 md:py-16 md:py-20 lg:px-20 lg:gap-40 md:gap-20 mt-10 items-center">
+                        <h1
+                            class="text-white text-2xl 2xl:text-4xl font-bold mb-20  md:mt-0 2xl:leading-loose relative leading-10">
+                            How it works
+                            <div class="absolute bottom-0 left-0 w-20 h-1 bg-white 2xl:w-28 2xl:h-2"></div>
+                        </h1>
+                        <div class="lg:px-20 md:px-10 2xl:px-0  2xl:my-32">
+                            <div>
+                                <div class="md:flex justify-between gap-10">
+                                    <div class="flex flex-col items-center mt-20 sm:mt-0">
+                                        <img src="assets/people.webp" alt="feature image"
+                                            class="h-22 w-28 2xl:w-60 2xl:h-60" />
+                                        <p class="text-white text-center mt-5">
+                                            Helping others join by referring them
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col items-center mt-20 sm:mt-0">
+                                        <img src="assets/meta.webp" alt="feature image"
+                                            class="h-24 w-24 2xl:w-60 2xl:h-60" />
+                                        <p class="text-white text-center mt-5">
+                                            New user joins and upgrades the account
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col items-center mt-20 sm:mt-0">
+                                        <img src="assets/dollar.webp" alt="feature image"
+                                            class="h-24 w-24 2xl:w-60 2xl:h-60" />
+                                        <p class="text-white text-center mt-5">
+                                            Reward getting distributed in the community
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- section five -->
+
+                <section class="mt-10 md:mt-20">
+                    <div class="md:flex px-2 py-10 md:py-16 md:py-20 lg:px-20 lg:gap-40 md:gap-20 mt-10 items-center">
+                        <div class="">
+                            <img src="assets/sectionthree.webp" alt="feature image" class="" />
+                        </div>
+                        <div>
+                            <h1 class="text-white text-2xl 2xl:text-4xl 2xl:mt-10 mb-10 mt-20 md:mt-0">
+                                Join Our Community
+                            </h1>
+                            <p class="text-white text-md 2xl:text-3xl text-justify"
+                                style="font-family: 'Proxima Nova', sans-serif">
+                                Joining our community is effortless and completely free of
+                                charge. As a member of Profitex, you gain access to exclusive
+                                benefits, including cashback rewards on both physical and
+                                digital purchases. Whether you prefer traditional in-store
+                                shopping or the convenience of online platforms, Profitex has
+                                you covered.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- section five -->
+
+                <section>
+                    <div class="md:flex px-2 py-10 md:py-16 md:gap-6  lg:gap-20 items-center">
+                        <div class="">
+                            <img src="assets/sectionfore.webp" alt="feature image" class="md:hidden block" />
+                        </div>
+                        <div>
+                            <h1 class="text-white text-2xl 2xl:text-4xl mb-10 mt-20 md:mt-0">
+                                Empowering Our Members
+                            </h1>
+                            <p class="text-white text-md 2xl:text-3xl text-justify"
+                                style="font-family: 'Proxima Nova', sans-serif">
+                                We believe in the power of community-driven commerce. As a
+                                Profitex member, you have the opportunity to suggest or
+                                promote products to others within the community. For every
+                                successful referral, you earn a percentage of commission as a
+                                reward. These rewards are distributed in the form of digital
+                                currency, granting you access to our ecosystem and enabling
+                                further purchases.
+                            </p>
+                        </div>
+                        <div class="">
+                            <img src="assets/sectionfore.webp" alt="feature image" class="hidden md:block" />
+                        </div>
+                    </div>
+                </section>
+
+                <!-- section six -->
+
+                <section>
+                    <div class="md:flex px-2 py-10 md:py-16 lg:px-20 lg:gap-40 md:gap-20 items-center">
+                        <div class="">
+                            <img src="assets/sectiontwo.webp" alt="feature image" class="" />
+                        </div>
+                        <div>
+                            <h1 class="text-white text-2xl 2xl:text-4xl 2xl:mt-10 mb-10 mt-20 md:mt-0">
+                                Future-Forward Approach
+                            </h1>
+                            <p class="text-white text-md 2xl:text-3xl text-justify"
+                                style="font-family: 'Proxima Nova', sans-serif">
+                                Profitex is committed to staying at the forefront of
+                                technological advancements. We are continuously exploring
+                                opportunities to integrate cutting-edge technologies such as
+                                metaverse and artificial intelligence into our system. Our
+                                goal is to enhance user experiences, streamline processes, and
+                                empower individuals to fulfill their needs with ease.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- section seven -->
+
+                <section>
+                    <div class="md:flex px-2 py-10 md:py-16  md:gap-10 lg:gap-20 items-center">
+                        <div class="">
+                            <img src="assets/sectionone.webp" alt="feature image" class="md:hidden block" />
+                        </div>
+                        <div>
+                            <h1 class="text-white text-2xl 2xl:text-4xl mb-10 md:mt-0">
+                                Seamless Shopping Experience
+                            </h1>
+                            <p class="text-white text-md 2xl:text-3xl text-justify"
+                                style="font-family: 'Proxima Nova', sans-serif">
+                                With Profitex, your earned rewards are seamlessly integrated
+                                into our app, providing you with real-time visibility and
+                                accessibility. Use your rewards to unlock massive discounts on
+                                a wide range of products available in our online store. From
+                                everyday essentials to luxury items, Profitex offers something
+                                for everyone.
+                            </p>
+                        </div>
+                        <div class="">
+                            <img src="assets/sectionone.webp" alt="feature image" class="hidden md:block" />
+                        </div>
+                    </div>
+                </section>
+
+                <!-- section six -->
+
+                <div class="footer-color flex flex-col md:flex-row items-center text-white rounded-2xl mt-20 p-10">
+                    <div>
+                        <p class="text-center md:text-left">
+                            Embark on a journey of discovery and empowerment with Profitex.
+                            Join our community, earn rewards, and unlock a world of exciting
+                            opportunities. Your shopping experience will never be the same
+                            again.
+                        </p>
+                    </div>
+
+                    <div class="mt-10 md:mt-0">
+                        <button
+                            class="bg-blue-600 hover:bg-blue-700 text-sm text-white font-semibold py-3 px-10 rounded shadow-custom whitespace-nowrap">
+                            Get Started
+                        </button>
+                    </div>
                 </div>
-              </div>
             </div>
-          </section>
+            <footer class="footer-color pt-20 py-10 pl-5 lg:px-20 mt-10">
+                <div class="px-4 sm:px-6 lg:px-8 grid grid-cols-12 lg:gap-26 gap-4">
+                    <div class="col-span-12 md:col-span-3 lg:col-span-3 flex justify-center md:justify-start">
+                        <div class="text-white">
+                            <div class="flex justify-center md:justify-start">
+                                <img src="assets/logo.webp" alt="Logo" class="h-14 mt-2" />
+                            </div>
+                            <div class="flex gap-4 mt-10">
+                                <div> <img src="assets/instagram.webp" class="h-5 w-5" alt="feature image" /> </div>
+                                <div> <img src="assets/facebook.webp" class="h-5 w-5" alt="feature image" /> </div>
+                                <div> <img src="assets/linkedin.webp" class="h-5 w-5" alt="feature image" /> </div>
+                                <div> <img src="assets/youtube.webp" class="h-5 w-5" alt="feature image" /> </div>
+                                <div> <img src="assets/twitter.webp" class="h-5 w-5" alt="feature image" /> </div>
+                            </div>
 
-          <!-- section five -->
+                        </div>
+                    </div>
+                    <div
+                        class="col-span-12 sm:col-span-6 md:col-span-3 lg:col-span-4 flex justify-center mt-10 md:mt-0">
+                        <div class="text-white">
+                            <h3 class="text-md font-semibold mt-3 lg:mt-0 lg:mb-2">Contact Us</h3>
+                            <div class="flex gap-2">
+                                <div> <img src="assets/Vector.webp" class="h-4 w-4 mt-3" alt="feature image" /> </div>
+                                <div>
+                                    <p class="text-xs my-3">+91 98745125220</p>
+                                </div>
+                            </div>
 
-          <section>
-            <div
-              class="md:flex px-2 py-10 md:py-16 md:py-20 lg:px-20 lg:gap-40 md:gap-20"
-            >
-              <div class="">
-                <img src="assets/sectionthree.webp" alt="overvision" class="" />
-              </div>
-              <div>
-                <h1
-                  class="text-white text-2xl 2xl:text-4xl 2xl:mt-10 mb-10 mt-20 md:mt-0"
-                >
-                  Join Our Community
-                </h1>
-                <p
-                  class="text-white text-md 2xl:text-3xl text-justify"
-                  style="font-family: 'Proxima Nova', sans-serif"
-                >
-                  Joining our community is effortless and completely free of
-                  charge. As a member of Profitex, you gain access to exclusive
-                  benefits, including cashback rewards on both physical and
-                  digital purchases. Whether you prefer traditional in-store
-                  shopping or the convenience of online platforms, Profitex has
-                  you covered.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <!-- section five -->
-
-          <section>
-            <div
-              class="md:flex px-2 py-10 md:py-16 md:gap-6  lg:gap-20"
-            >
-            <div class="">
-              <img src="assets/sectionfore.webp" alt="overvision" class="md:hidden block" />
-            </div>
-              <div>
-                <h1
-                  class="text-white text-2xl 2xl:text-4xl mb-10 mt-20 md:mt-0"
-                >
-                  Empowering Our Members
-                </h1>
-                <p
-                  class="text-white text-md 2xl:text-3xl text-justify"
-                  style="font-family: 'Proxima Nova', sans-serif"
-                >
-                  We believe in the power of community-driven commerce. As a
-                  Profitex member, you have the opportunity to suggest or
-                  promote products to others within the community. For every
-                  successful referral, you earn a percentage of commission as a
-                  reward. These rewards are distributed in the form of digital
-                  currency, granting you access to our ecosystem and enabling
-                  further purchases.
-                </p>
-              </div>
-              <div class="">
-                <img src="assets/sectionfore.webp" alt="overvision" class="hidden md:block" />
-              </div>
-            </div>
-          </section>
-
-          <!-- section six -->
-
-          <section>
-            <div
-              class="md:flex px-2 py-10 md:py-16 lg:px-20 lg:gap-40 md:gap-20"
-            >
-              <div class="">
-                <img src="assets/sectiontwo.webp" alt="overvision" class="" />
-              </div>
-              <div>
-                <h1
-                  class="text-white text-2xl 2xl:text-4xl 2xl:mt-10 mb-10 mt-20 md:mt-0"
-                >
-                  Future-Forward Approach
-                </h1>
-                <p
-                  class="text-white text-md 2xl:text-3xl text-justify"
-                  style="font-family: 'Proxima Nova', sans-serif"
-                >
-                  Profitex is committed to staying at the forefront of
-                  technological advancements. We are continuously exploring
-                  opportunities to integrate cutting-edge technologies such as
-                  metaverse and artificial intelligence into our system. Our
-                  goal is to enhance user experiences, streamline processes, and
-                  empower individuals to fulfill their needs with ease.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <!-- section seven -->
-
-          <section>
-            <div
-              class="md:flex px-2 py-10 md:py-16  md:gap-10  lg:gap-20"
-            >
-            <div class="">
-              <img src="assets/sectionone.webp" alt="overvision" class="md:hidden block" />
-            </div>
-              <div class="lg:mt-20">
-                <h1
-                  class="text-white text-2xl 2xl:text-4xl mb-10 mt-20 md:mt-0"
-                >
-                  Seamless Shopping Experience
-                </h1>
-                <p
-                  class="text-white text-md 2xl:text-3xl text-justify"
-                  style="font-family: 'Proxima Nova', sans-serif"
-                >
-                  With Profitex, your earned rewards are seamlessly integrated
-                  into our app, providing you with real-time visibility and
-                  accessibility. Use your rewards to unlock massive discounts on
-                  a wide range of products available in our online store. From
-                  everyday essentials to luxury items, Profitex offers something
-                  for everyone.
-                </p>
-              </div>
-              <div class="">
-                <img src="assets/sectionone.webp" alt="overvision" class="hidden md:block" />
-              </div>
-            </div>
-          </section>
-
-          <!-- section six -->
-
-          <div class="footer-color md:flex items-start md:text-lg text-sm justify-between gap-20 lg:mx-16 p-8 text-white rounded-2xl mt-20">
-            <div>
-              <p>
-                Embark on a journey of discovery and empowerment with Profitex.
-                Join our community, earn rewards, and unlock a world of exciting
-                opportunities. Your shopping experience will never be the same
-                again.
-              </p>
-            </div>
-            
-            <div>
-              <button style="height: 2.5rem;" class="bg-blue-600 hover:bg-blue-700 text-xs text-white font-semibold py-3 px-7 mt-10 lg:mt-5 lg:py-2 lg:px-6 rounded shadow-custom mx-16 md:mx-0">
-                Get Started
-              </button>
-            </div>
-          </div>
-        </div>
-        
-
-          <footer class="footer-color py-10 mt-10 pl-5 lg:px-20">
-            <div
-              class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:gap-26 gap-4"
-            >
-              <div class="text-white">
-                <div class="flex">
-                  <div class="text-4xl font-semibold">Profite</div>
-                  <div><img src="assets/x.webp" alt="Logo" class="h-8 mt-2" /></div>
-                  </div>
-                <div class="flex gap-4 mt-10">
-                  <div> <img src="assets/instagram.webp" class="h-5 w-5" alt="overvision"/> </div>
-                  <div> <img src="assets/facebook.webp" class="h-5 w-5" alt="overvision"/> </div>
-                  <div> <img src="assets/linkedin.webp" class="h-5 w-5" alt="overvision"/> </div>
-                  <div> <img src="assets/youtube.webp" class="h-5 w-5" alt="overvision"/> </div>
-                  <div> <img src="assets/twitter.webp" class="h-5 w-5" alt="overvision"/> </div>
+                            <div class="flex gap-2">
+                                <div> <img src="assets/mail.webp" class="h-4 w-4 mt-3" alt="feature image" /> </div>
+                                <div>
+                                    <p class="text-xs my-3">support@profitex.io</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-2">
+                                <div> <img src="assets/map.webp" class="h-4 w-4 mt-3" alt="feature image" /> </div>
+                                <div>
+                                    <p class="text-xs my-3">Cochin, Kerala</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-5 flex justify-center mt-10 md:mt-0">
+                        <div class="grid grid-cols-2 md:col-span-1 text-white">
+                            <a class="col-span-2 md:col-span-1 text-xs m-3 md:mx-5 lg:mx-10"
+                                href="./terms-conditions.html">Terms & Conditions</a>
+                            <a class="col-span-2 md:col-span-1 text-xs m-3 md:mx-5 lg:mx-10"
+                                href="./privacy-policy.html">Privacy policy</a>
+                            <a class="col-span-2 md:col-span-1 text-xs m-3 md:mx-5 lg:mx-10"
+                                href="./refund-policy.html">Refund policy</a>
+                            <a class="col-span-2 md:col-span-1 text-xs m-3 md:mx-5 lg:mx-10" href="#">FAQ</a>
+                        </div>
+                    </div>
                 </div>
-               
-              </div>
-              <div class="text-white lg:pl-20 md:pl-12">
-                <h3 class="text-md font-semibold mt-3 lg:mt-0 lg:mb-2">Contact Us</h3>
-                <div class="flex gap-2">
-                  <div> <img src="assets/Vector.webp" class="h-4 w-4 mt-3" alt="overvision"/> </div>
-                  <div> <p class="text-xs my-3">+91 98745125220</p></div>
+                <div class="text-white mt-16 flex flex-col items-center">
+                    <p class="text-sm my-5">2024 © All rights reserved</p>
+                    <p class="text-sm">Crafted with ♥ from &nbsp;<a href="https://zynact.com" target="_blank"><span
+                                class="font-bold">Zynact</span></a></p>
                 </div>
-               
-                <div class="flex gap-2">
-                  <div> <img src="assets/mail.webp" class="h-4 w-4 mt-3" alt="overvision"/> </div>
-                  <div> <p class="text-xs my-3">support@profitex.io</p></div>
-                </div>
-                <div class="flex gap-2">
-                  <div> <img src="assets/map.webp" class="h-4 w-4 mt-3" alt="overvision"/> </div>
-                  <div> <p class="text-xs my-3">Cochin, Kerala</p></div>
-                </div>
-              </div>
-              <div class="text-white md:pl-20">
-                <div class="text-xs my-5">
-                  <a href="/conditions.html">Terms & Conditions</a>
-                </div>
-                <div class="text-xs my-5">
-                  <a href="/privacy.html">Privacy policy</a>
-                </div>
-                
-              </div>
-              <div class="text-white md:pl-20">
-                <div class="text-xs my-5">
-                  <a href="/refund.html">Refund policy</a>
-                </div>
-                <p class="text-xs my-2">FAQ</p>
-              </div>
-            </div>
-            <div class="text-white mt-16 flex flex-col items-center">
-              <p class="text-xs my-5">2024 © All rights reserved</p>
-              <p class="text-xs">Crafted with ♥ from Zynact</p>
-          </div>
-          </footer>
-       
+            </footer>
         </div>
     </div>
+</body>
 
-  
-    
-  </body>
 </html>
